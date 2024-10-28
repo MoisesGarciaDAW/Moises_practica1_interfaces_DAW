@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+        <!-- Declaramos que el documento es HTML5, codificadción utf-8, para soportar caracteres especiales, y que se adapte a diferentes tamañso de pantalla -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--describimos de que va la pagina y le damos un titulo-->
     <meta name="description" content="Página sobre Bob Dylan y su premio nobel de la literatura.">
     <title>Bob Dylan,Premio Nobel de Literatura</title>
+    <!-- conectamos con la pagina de estilos-->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+<!--iniciamos el cuerpo de la pagina con una cabezera con el titulo-->
 <body>
     <header>
         <h1> <a href="index.html"> Letras</a></h1>
     </header>
+    <!--creamos un apartado de navegación para poder cambiar de pagina facilmente-->
     <nav>
         <ul>
             <li><a href="index.html" class="active">Bob Dylan, premio Nobel de literatura 2016</a></li>
@@ -20,8 +25,11 @@
     </nav>
     <!-- Contenido principal -->
     <main>
+        <!--creamos la sección principal de la pagina-->
         <article id="container">
+            <!--ponemos otro titulo1 por su importancia-->
             <h1>Bob Dylan, Premio Nobel de Literatura</h1>
+            <!--y creamos un parrafo-->
                 <p class="article__p--centrado">
                     La concesión del premio Nobel de literatura
                     de este año a Robert A. Zimmerman, Bob Dylan 
@@ -32,8 +40,10 @@
                     dudas acerca de que su arte pueda ser 
                     calificado de literatura. 
                 </p>
+                <!--destacamos este apartado con un h3 por su importancia-->
             <h3>Salvador Climent</h3>
                 <p>17 octubre, 2016</p>
+                <!--creamos un figure para poder ponerle un figcaption a la imagen y un enlace-->
                 <figure>
                 <img src="img/Bob-Dylan-and-The-Band-1974.jpg" alt="foto de Bob Dylan y su banda en 1974"/>
                     <figcaption>
@@ -52,8 +62,9 @@
                     susceptibles de impacto comercial, compuestas por escritores profesionales 
                     a sueldo de las productoras. Bob Dylan cambia las reglas del juego.
                 </p>
+             <!--a partir de aquí seran titulos de los diferentes apartados asi que ya seran h2-->
             <h2>El mito de la canción protesta</h2>
-
+                <!--utilizamos span para dar estilos a partes específicas-->
                 <p>
                     Hay un gran malentendido popular sobre Bob Dylan. Es víctima del cliché 
                     de la canción protesta, como John Lennon lo es del cliché de paz, amor y 
@@ -89,6 +100,7 @@
                     práctica totalidad del cancionero de Dylan no tiene intención política ni social.
                 </p>
                 <figure> 
+                    <!--ahora utilizamos un iframe para capturar un video de youtube con sus propiedades-->
                     <iframe 
                         width="560" height="315" 
                         src="https://www.youtube.com/embed/vWwgrjjIMXA?si=-dNYmAz6uTc_oTkP" 
@@ -237,6 +249,7 @@
                 </p>
         </article>
     </main>
+    <!--una vez acabado el contenido principal declaramos un pie de pagina-->
     <footer>
         <p>
             Actividad realizada por Moisés García García. Diseño de interfaces web

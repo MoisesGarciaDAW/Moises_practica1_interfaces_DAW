@@ -1,9 +1,10 @@
+/* estilo dado al apartado con la id de container que ocupa el 90 porciento de la pagina con un ahco maximo un un margen centrado horizontal */
 #container{
     width: 90%;
     max-width: 1140px;
     margin: 0 auto;
     }
-
+/* estilo al h1 de la cabezera donde centra el texto, da un tamaño de fuente un marge,un tipo de letra y un color */
 header h1 {
     text-align: center;
     font-size: 4rem;
@@ -11,182 +12,200 @@ header h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(240, 93, 80);
 }
+/* estilo que cambia de color al h1 de la cabecera al posicionar el raton en el */
 header h1:hover {
     color: rgba(240, 93, 80, 0.5);
 }
-
+/* estilo que centra el texto de la etiqueta navegación */
 nav {
     text-align: center;
 }
+/* estilo que quita el punto de la lista desordenada de navegación y le da un color al texto */
 nav li{
     list-style-type: none;
     color: rgb(0,0,25);
 }
-
+/* estilo que quita el subrallado, le da un color y una potencia de color suave a los enlaces de navegación */
 nav a {
     text-decoration: none;
     font-weight: lighter;
     color: rgb(0,0,25);
 }
+/* estilo que al poner el ratón sobre un enlace de navegación lo resalta */
 nav a:hover {
     color: rgba(0,0,25,0.5);
 
 }
+/* estilo para los enlaces de navegación con la clase active, que los vuelve mas oscuros y los pone en cursiva */
 nav a.active {
     font-weight: bolder; 
     font-style: italic; 
 }
+/* estilo para el body del texto donde le da un tipo de fuente un color y un tamaño de letra */
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 25);
     font-size: 11pt;
 }
+/* estilo paras los enlaces en general donde les quita su subralaldo y le da un color */
 a{
     text-decoration: none;
     color: rgb(240, 93, 80);
 
 }
+/* estilo para los enlaces en general donde al poner el raton sobre ellos les cambia de color tanto a la letra como al fondo */
 a:hover {
     background-color: #ddd;
     color: rgba(240, 93, 80, 0.5);
 }
+/* estilo para los enlaces con esta clase que les quita el subrallado, les da un color y los pone mas oscuros */
 .a--destacados{
     text-decoration: none;
     color: rgb(240, 93, 80);
     font-weight: bold;
 }
-
+/* estilo para el h1 del articulo al que le da un tamaño de letra y centra su texto */
 article h1 {
     font-size: 2.5rem;
     text-align: center;
-    
 }
-
-
+/* estilo para los p  del articulo al que le da un tamaño de letra */
 article p {
     font-size: 10pt;
 }
-
+/* estilo para los p del articulo con esa clase donde les da un tamaño los centra y les da un poco de paddig */
 .article__p--centrado {
     font-size: 11pt;
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
 }
+/* estilo para los p del articulo donde hace lo mismo que el anterior pero con la letra mas pequeña */
 .article__p--centrado--chiquito {
     font-size: 8pt;
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
 }
+/* estilo para los p del articulo dando un tamaño de letra aliniandola a la izquierda, dandole profundidad al color y un poco de paddig */
 .article__p--izquierda {
     font-size: 11pt;
     text-align: left;
     padding-right: 25%;
     font-weight:  bolder;
 }
+/* estilo para los p del articulo dadndo un tamaño de letra un poco de paddig */
 .article__p--citando{
     font-size: 11pt;
     padding-left: 5%;
 }
+/* estilo para los p del articulo dandole una fuente, un tamaño, un poco de padding y pone el texto en cursiva */
 .article__p--cita{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 10pt;
     padding-left: 5%;
     font-style: italic;
 }
+/* estilo para las clases cita donde los pone un cursiva, les da un tamaño y una fuente */
 .cita{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 10pt;
 }
+/* estilo para las obras de los autores con una fuente, un tamaño y en cursiva */
 .obra{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 10pt;
 }
+/* función que añade antes de empezar la clase obra unas comillas */
 .obra::before{
     content: "«";
 }
+/* funciónq que añade al terminar la clase obra unas comillas */
 .obra::after{
     content: "»";
 }
+/* estilo para el h3 del articulo donde centra la letra le da un tamaño y oscurece la letra */
 article h3 {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
 }
-
+/* estilo para el figure del articulo donde centra el texto y le de margen  */
 article figure {
     text-align: center;
     margin: 20px 0;
 }
-
+/* estilo para la imgagen del digure del article donde le da el maximo de tamaña y un borde */
 article figure img {
     max-width: 100%;
     height: auto;
     border: 2px solid #ccc;
 }
-
+/* estilo para el figcaption del articulo donde le da margen arriba, un tamaño de fuente y un color */
 article figcaption {
     font-size: 0.5rem;
     color: #353535;
     margin-top: 5px;
 }
+/* estilo para el section donde lo centra dando un ancho y un margen */
 .section--centrada{
     width: 35%;
     margin: 0 auto;
 }
+/* estilo para el section general dandole padding a los lados para centrarlo */
 section{
     padding-left: 20%;
     padding-right: 15%;  
 }
+/* estilo para la lista desordeanda dandole un color y un margen a la izquierda */
 li{
     margin-left: 15px;
     color: rgba(0,0,25,0.5);
 }
+/* estilo para el apartadado descriptivo de la lista descriptiva con un margen arriba y abajo y un tamaño de fuetne */
 dd{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 11pt;
 }
+/* estilo para el año de la lista descriptiva con un tamaño de fuente y un color */
 .dd--año{
     color: rgba(0,0,25,0.5);
     font-size: medium;
 }
+/* estilo para las p  seguidas al h3 con un margen inferior arriba centradas y un tamaño de letra */
 h3 + p {
     margin-top: -5px;
     text-align: center;
     font-size: 0.8rem;
 }
-
-
-
-
+/* estilo para el iframde donde le da el maximo de anchula y lo centra */
 iframe {
     margin: 20px auto;
     max-width: 100%;
 }
 
-/* Estilos para el pie de página */
+/* Estilos para el pie de página donde centra el texto le da padding uun color de fondo y color a la letra*/
 footer {
     text-align: center;
     padding: 20px;
     background-color:rgb(0,0,25);
     color: rgb(255,255,255);
 }
-
+/* estilo para la p del pie de pagina donde le da margen un tamaño de letra y una profundidad ligera */
 footer p{
     margin: 10px;
     font-size: 9pt;
     font-weight: lighter;
 }
-
+/* estilo al enlace de pie de pagina dandole un color y quitando el subrallado */
 footer a {
     color: rgb(255,255,255);
     text-decoration: none;
 }
-
+/* función que al poner el raton encima del enlace cambia el color dle texto */
 footer a:hover {
     color: rgb(240,93,80);
 }
